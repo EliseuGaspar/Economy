@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin/styles/css/default.css">
+    <link rel="stylesheet" href="admin/styles/css/__init__.css">
+    <link rel="stylesheet" href="admin/styles/css/cambio.css">
+    <link rel="stylesheet" href="admin/styles/css/conversor.css">
+    <link rel="stylesheet" href="admin/styles/css/impostos.css">
+    <link rel="stylesheet" href="admin/styles/css/noticias.css">
+    <link rel="stylesheet" href="admin/styles/css/configs.css">
+    <link rel="stylesheet" href="admin/styles/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>T-Finanças</title>
+</head>
+<body>
+	<header>
+        <h2 class="h-titulo"></h2>
+		<button id="__icone_menu"><i class="fas fa-bars"></i></button>
+		<nav id="nav_body">
+            <div id="nav_bars">
+                <div class="titulo">
+                    <h2 id="back_menu"><i class="fas fa-arrow-left"></i> Menu</h2>
+                </div>
+                <div class="user_detalhes">
+                    <div>
+                        <p>E-mail de Usuário:</p>
+                        <span>eliseugaspar4@gmail.com</span>
+                    </div>
+                    <div>
+                        <p>Caixa de Notificações:</p>
+                        <span>0</span>
+                    </div>
+                    <div>
+                        <p>Sua Privacidade:</p>
+                        <section class="senha_show">
+                            <span>******</span>
+                            <span class="btn_show_pass"><i class="fas fa-eye-slash"></i></span>
+                        </section>
+                    </div>
+                </div>
+                <ul>
+                    <li><button id="update_app">Atualizações <i class="fas fa-redo"></i></button></li>
+                    <li><button id="configs">Configurações <i class="fas fa-cog"></i></button></li>
+                    <li><button id="redes-sociais">Nossas Redes <i class="fas fa-share"></i></button></li>
+                    <li><button>Guardados <i class="fas fa-download"></i></button></li>
+                    <li><button>Ajuda <i class="fas fa-info"></i></button></li>
+                </ul>
+                <div class="copyright">
+                    <p>© Eliseu Gaspar - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<main id="__init__" class="active">
+        <div class="titulo">
+            <h2><i class="fas fa-user"></i> Crie uma conta</h2>
+        </div>
+        <figure>
+		    <img src="admin/midias/imgs/MRR.png" alt="logo da T-Finanças" width="150px">
+            <figcaption>
+                Faça login e fique a par de todas as novidades do mercado 
+                de finanças.
+            </figcaption>
+        </figure>
+        <input type="email" name="email" id="email" placeholder="Insira cá o seu e-mail 📧">
+        <div class="other-login-options">
+            <h3>Faça login utilizando:</h3>
+            <button><i class="fab fa-facebook"></i> Conta Facebook</button>
+            <button><i class="fab fa-whatsapp"></i> Conta Whatsapp</button>
+            <button><i class="fab fa-apple"> Conta Apple</i></button>
+        </div>
+        <div class="bottom_buttons">
+            <button id="creat-account">Criar Conta</button>
+            <button id="dont-account">Agora Não</button>
+        </div>
+
+	</main>
+	<main id="__home__">
+		<div class="titulo">
+            <h2><i class="fas fa-home"></i> Inicio</h2>
+        </div>
+        <section class="apps">
+            <h2 class="apps-title">Apps T-Finanças</h2>
+            <div class="box1">
+                <button id="btn_cambio"><i class="fas fa-coins"></i> T-Câmbio</button>
+                <button id="btn_conversor"><i class="fas fa-spinner"></i> T-Conversor</button>
+            </div>
+            <div class="box2">
+                <button id="btn_impostos"><i class="fas fa-euro-sign"></i> T-Impostos</button>
+                <button id="btn_noticias"><i class="fas fa-newspaper"></i> T-Notícias</button>
+            </div>
+            <div class="box3">
+                <button id="btn_gerenciador"><i class="fas fa-database"></i> T-Gestor</button>
+            </div>
+        </section>
+	</main>
+    <main id="cambio">
+        <div class="titulo">
+            <h2><i class="fas fa-coins"></i> TCâmbio</h2>
+        </div>
+        <section class="main">
+            <section class="header">
+                <p>Selecione um banco:</p>
+                <select name="cambio_select" id="select_cambio">
+                    <option value="BAI">Banco Angolano Internacional(BAI)</option>
+                    <option value="BNI">Banco de Negócio Internacional(BNI)</option>
+                    <option value="FB">FiniBanco(FB)</option>
+                </select>
+            </section>
+            <section class="body">
+                <div class="info">
+                    <h2>Câmbio do Banco <span class="banco">BAI</span></h2>
+                    <p>Atualizado em: <span class="data">XX/XX/XXXX</span></p>
+                </div>
+                <section class="cambios">
+                    <div class="cabecario">
+                        <div>Moeda</div>
+                        <div>Compra</div>
+                        <div>Venda</div>
+                    </div>
+                    <ul class="ul_master">
+                        <div>
+
+                        </div>
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </main>
+    <main id="conversor">
+        <div class="titulo">
+            <h2><i class="fas fa-spinner"></i> TConversor</h2>
+        </div>
+        <section class="top">
+            <select name="moeda1" id="moeda1">
+                <option value="BAI">Banco Angolano Internacional(BAI)</option>
+                <option value="BNI">Banco de Negócio Internacional(BNI)</option>
+                <option value="FB">FiniBanco(FB)</option>
+            </select>
+
+            <input type="number" name="valor" id="valor">
+
+            <select name="moeda2" id="moeda2">
+                
+            </select>
+            <button id="btn_converter">Converter</button>
+        </section>
+        <section id="bottom">
+            <button id="copy"><i class="fas fa-copy"></i></button>
+            <h3 id="resultado">Sem nada ainda</h3>
+        </section>
+    </main>
+    <main id="impostos">
+        <div class="titulo">
+            <h2><i class="fas fa-euro-sign"></i> Impostos</h2>
+        </div>
+        <section class="content">
+            <div>
+                <button id="c1" value="1">Lorem ipsum dolor sit amet. <i class="fas fa-plus"></i></button>
+                <article>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea voluptatibus porro earum perferendis.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <button id="c2" value="2">Lorem ipsum dolor sit amet. <i class="fas fa-plus"></i></button>
+                <article>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea voluptatibus porro earum perferendis.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <button id="c3" value="3">Lorem ipsum dolor sit amet. <i class="fas fa-plus"></i></button>
+                <article>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea voluptatibus porro earum perferendis.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <button id="c4" value="4">Lorem ipsum dolor sit amet. <i class="fas fa-plus"></i></button>
+                <article>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea voluptatibus porro earum perferendis.
+                    </p>
+                </article>
+            </div>
+            <div>
+                <button id="c5" value="5">Lorem ipsum dolor sit amet. <i class="fas fa-plus"></i></button>
+                <article>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ea voluptatibus porro earum perferendis.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <main id="noticias">
+        <div class="titulo">
+            <h2><i class="fas fa-newspaper"></i> TNotícias</h2>
+        </div>
+        <div class="noticias-item">
+            <label for="noticia-item">Selecione um tema:</label>
+            <select name="noticia-item" id="noticia-item">
+                
+            </select>
+        </div>
+        <section class="content">
+            <article id="artigo">
+                <h2 id="noticia-titulo"></h2>
+                <div id="noticia-imagem"></div>
+                <h4 id="noticia-cabecario">
+                    
+                </h4>
+                <div id="noticia-corpo">
+                    
+                </div>
+                <span>Fonte: <a href="https://www.jornaldeangola.ao">Jornal_Angola</a></span>
+            </article>
+        </section>
+    </main>
+    <main id="configuracoes">
+        <div class="titulo">
+            <h2><i class="fas fa-cog"></i> Configurações</h2>
+        </div>
+        <section class="opcoes">
+            <div class="opt1">
+                <p>Atualização Automática</p>
+                <input type="checkbox" name="opt1" id="opt1">
+            </div>
+            <div class="opt2">
+                <p>Guardar Dados</p>
+                <input type="checkbox" name="opt2" id="opt2">
+            </div>
+            <div class="opt3">
+                <p>Mudar Tema</p>
+                <input type="color" name="tema" id="opt3" value="#1e90ff">
+            </div>
+            <div class="opt4">
+                <p>Alterar E-mail</p>
+                <input type="email" name="opt4" id="opt4" value="eliseugaspar4@gmail.com">
+            </div>
+            <div class="div">
+                Informações da App <i class="fas fa-celular"></i>
+                <div class="barra"></div>
+            </div>
+            <section class="info">
+                <p>Nome da App: "T-Finanças"</p>
+                <p>Data de Distribuição: "12.12/2012"</p>
+                <p>Version: 1.0</p>
+                <p>Author: "Eliseu Gaspar"</p>
+                <p>Empresa:"DF - ELSU"</p>
+                <p>Direitos :"© DF - ELSU _ Todos os direitos reservados"</p>
+                <p>Contactos:</p>
+                <p>- Facebook: <a href="#">"https://www.facebook.com/DF-ELSU"</a></p>
+                <p>- WebSite: <a href="#">"https://www.df-elsu.tk"</a></p>
+            </section>
+        </section>
+        <div class="bottom_zone">
+            <button id="configs_back">Voltar</button>
+            <button>Guardar</button>
+        </div>
+    </main>
+
+    <aside id="alert">
+        <span><i class="fas fa-info"></i></span>
+        <p>
+            
+        </p>
+        <div class="bottom-bar"></div>
+    </aside>
+
+    <footer>
+        <button id="back-page"><i class="fas fa-arrow-left"></i></button>
+        <button id="next-page"><i class="fas fa-arrow-right"></i></button>
+    </footer>
+    
+    <script src="admin/scripts/variaveis.js"></script>
+    <script src="admin/scripts/__init__.js"></script>
+    <script src="admin/scripts/cambio.js"></script>
+    <script src="admin/scripts/conversor.js"></script>
+    <script src="admin/scripts/noticias.js"></script>
+    <script src="admin/scripts/requisicoes.js"></script>
+</body>
+</html>

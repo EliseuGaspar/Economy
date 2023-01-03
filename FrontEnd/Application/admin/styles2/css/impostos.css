@@ -1,0 +1,152 @@
+@import url(default.css);
+
+#impostos{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 4;
+    transition: right .2s ease ,all .7s ease-in-out;
+}
+
+#impostos.active{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+#impostos .master{
+    position: absolute;
+    top: 7.1rem;
+    width: 100%;
+    height: 84vh;
+    overflow-y: scroll;
+}
+
+#impostos .master .content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#impostos .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--default);
+    color: var(--back);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 2;
+}
+
+#impostos .header button{
+    font-size: 16px;
+}
+
+#impostos .header span{
+    margin: 0 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#impostos .header-select{
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 2rem;
+    background-color: var(--default);
+    color: var(--back);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+#impostos .header-select label{
+    width: 40%;
+    cursor: pointer;
+}
+
+#impostos .header-select select{
+    width: 60%;
+    cursor: pointer;
+}
+
+#impostos .imposto-box{
+    position: relative;
+    width: 95%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#impostos .imposto-box .titulo{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#impostos .imposto-box section div.box-style{
+    width: 10%;
+    height: inherit;
+    background-color: var(--default);
+}
+
+#impostos .imposto-box .bottom-section div.box-style{
+    width: 10%;
+    height: inherit;
+    background-color: transparent;
+}
+
+#impostos .imposto-box .titulo h3{
+    width: 90%;
+    padding-left: 3%;
+}
+
+#impostos .imposto-box section.description{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 77%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#impostos .imposto-box .bottom-section{
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 25px;
+    background-color: var(--back);
+    display: flex;
+    align-items: center;
+}
+
+#impostos .imposto-box .bottom-section span{
+    width: 90%;
+    padding-left: 3%;
+}
+
+
+

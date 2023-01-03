@@ -1,0 +1,154 @@
+@import url(default.css);
+
+#cambio
+{
+    position: fixed;
+    top: 7rem;
+    gap: 7px;
+}
+
+#cambio .top
+{
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    background-color: var(--default);
+    color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+#cambio .top h2
+{
+    font-size: 19px;
+    font-weight: inherit;
+}
+
+#cambio .top select
+{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#cambio #campo_date-update
+{
+    width: 100%;
+    text-align: center;
+}
+
+#cambio .cambio-show
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+}
+
+#cambio .cambio-show .headers
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cambio .cambio-show .headers span
+{
+    width: 33%;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    background-color: #ddd;
+    border-right: 1px solid #f9f9f9;
+}
+
+#cambio .cambio-show .headers span:nth-last-of-type(1)
+{
+    border: 0;
+}
+
+#cambio .cambio-show .content
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 95%;
+}
+
+#cambio .cambio-show .content #ul_master{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow-y: scroll;
+}
+
+#cambio .cambio-show .content #ul_master::-webkit-scrollbar{
+    width: 5px;
+    background-color: var(--back);
+}
+
+#cambio .cambio-show .content #ul_master::-webkit-scrollbar-thumb{
+    background-color: var(--default);
+    border-radius: 5px;
+}
+
+#cambio .cambio-show .content #ul_master ul{
+    display: flex;
+    justify-content: center;
+}
+
+#cambio .cambio-show .content #ul_master ul li{
+    width: 33%;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    background-color: var(--default);
+    color: var(--back);
+}
+
+#cambio #plus_options
+{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    background-color: var(--default);
+    color: #f9f9f9;
+    opacity: 0.5;
+}
+
+#cambio .await{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 33, 33, 0.356);
+    color: #f9f9f9;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+
+    transition: .2s ease-in-out;
+}
+
+#cambio .await.active{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}

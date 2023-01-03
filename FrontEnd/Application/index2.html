@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin/styles2/css/default.css">
+    <link rel="stylesheet" href="admin/styles2/css/__init__.css">
+    <link rel="stylesheet" href="admin/styles2/css/cambio.css">
+    <link rel="stylesheet" href="admin/styles2/css/conversor.css">
+    <link rel="stylesheet" href="admin/styles2/css/noticia.css">
+    <link rel="stylesheet" href="admin/styles2/css/consultas.css">
+    <link rel="stylesheet" href="admin/styles2/css/impostos.css">
+    <link rel="stylesheet" href="admin/styles2/css/NIF.css">
+    <link rel="stylesheet" href="admin/styles/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Economy</title>
+</head>
+<body>
+    <!-- Header Of Application -->
+	<header>
+        <div class="top"> <!-- Top zone of header application -->
+            <section>
+                <button id="open-menu"><i class="fas fa-bars"></i></button>
+                <h2 id="App-name">Inicio</h2>
+            </section>
+            <section>
+                <button><i class="fas fa-search"></i></button>
+                <button><i class="fas fa-plus"></i></button>
+            </section>
+        </div>
+        <div class="bottom"> <!-- Buttons of applications in App master -->
+            <button class="App-Icones" value="Câmbio"><i class="fas fa-coins"></i></button>
+            <button class="App-Icones" value="Conversor"><i class="fas fa-euro-sign"></i></button>
+            <button class="App-Icones" value="Noticías"><i class="fas fa-newspaper"></i></button>
+            <button class="App-Icones" value="Consultas"><i class="fas fa-table"></i></button>
+            <button class="App-Icones" value="+ Apps"><i class="fab fa-app-store"></i></button>
+        </div>
+    </header>
+
+    <!-- MenuBar of Application Master -->
+    <nav id="MenuBar">
+        <div class="header">
+            <button id="exit-menu"><span><i class="fas fa-arrow-left"></i> Voltar</span></button>
+            <div src="" id="avatar"></div>
+            <section>
+                <span id="show-user-na">Eliseu Gaspar</span>
+                <span id="show-user-email">
+                    <p>eliseugaspar4@gmail.com</p>
+                    <i class="fas fa-sort-down"></i>
+                </span>
+            </section>
+        </div>
+        <div class="body">
+            <div class="top">
+                <button><i class="fas fa-home"></i> Meu Economy</button>
+                <button><i class="fas fa-bell"></i> Notificações</button>
+            </div>
+            <div class="bottom">
+                <h3 class="titulo">Ajuda & Suporte</h3>
+
+                <section>
+                    <button><i class="fas fa-info"></i> Ajuda Economy</button>
+                    <button><i class="fas fa-question"></i> Sobre Economy</button>
+                    <button><i class="fas fa-comment"></i> Envie um FeedBack</button>
+                    <button><i class="fas fa-cogs"></i> Configurações</button>
+                </section>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HomePage of Application Master -->
+    <main id="dashboard" class="active">
+        <div id="intro-card">
+            <div class="zona_logo"><img src="admin/midias/imgs/logo.png"></div>
+            <div class="zona_content">
+                <h3>Bem-Vindo(a): Eliseu.</h3>
+                <p>Segunda-Feira - 17/12/2022</p>
+                <p>Estado da conta: Activa.</p>
+                <hr>
+                <span>Gaste menos e poupe mais! (Economy)</span>
+            </div>
+        </div>
+        <section id="tarefas">
+            <div class="top">
+                <h3>Tarefas:</h3>
+                <button>Ver Todas</button>
+            </div>
+            <div class="box-tarefas">
+                <button>
+                    <i class="fas fa-spinner"></i>
+                </button>
+                <h4 class="titulo">Minha tarefa 1</h4>
+                <button>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                </button>
+            </div>
+            <div class="box-tarefas">
+                <button>
+                    <i class="fas fa-spinner"></i>
+                </button>
+                <h4 class="titulo">Minha tarefa 2</h4>
+                <button>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                </button>
+            </div>
+            <div class="box-tarefas">
+                <button>
+                    <i class="fas fa-spinner"></i>
+                </button>
+                <h4 class="titulo">Minha tarefa 3</h4>
+                <button>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                </button>
+            </div>
+            <div class="box-tarefas">
+                <button>
+                    <i class="fas fa-spinner"></i>
+                </button>
+                <h4 class="titulo">Minha tarefa 4</h4>
+                <button>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                </button>
+            </div>
+            <div class="box-tarefas">
+                <button>
+                    <i class="fas fa-spinner"></i>
+                </button>
+                <h4 class="titulo">Minha tarefa 5</h4>
+                <button>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                    <s>⚫</s>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- mini-app `Câmbio` -->
+    <main id="cambio">
+        <div class="top">
+            <h2>Selecione um Banco:</h2>
+            <select id="cambio-select">
+                <option value="BAI">Banco Angolano de Investimento(BAI)</option>
+                <option value="BNI">Banco de Negócios Internacionais(BNI)</option>
+                <option value="BDA">Banco de Desenvolvimento Angolano(BDA)</option>
+                <option value="BCI">Banco de Comércio e Indústria(BCI)</option>
+                <option value="BIC">Banco de Internacional de Comercio(BIC)</option>
+                <option value="BFA">Banco de Fomento Angola(BFA)</option>
+                <option value="SOL">Banco Sol(SOL)</option>
+                <option value="FB">FiniBanco(FB)</option>
+            </select>
+        </div>
+        <div id="campo_date-update">
+            <p id="date-update">Atualizado em: xx/xx/xxxx</p>
+        </div>
+        <div class="cambio-show">
+            <div class="headers">
+                <span>Moeda</span>
+                <span>Compra</span>
+                <span>Venda</span>
+            </div>
+            <div class="content">
+                <ul id="ul_master">
+                    
+                </ul>
+            </div>
+        </div>
+        <aside class="await">
+            <img src="admin/midias/imgs/load.gif" width="120px">
+            <h3>Carregando...</h3>
+        </aside>
+    </main>
+
+    <!-- mini-app `Conversor` -->
+    <main id="conversor">
+        <section class="header">
+            <select id="conversor-select">
+                <option value="BAI">Banco Angolano de Investimento(BAI)</option>
+                <option value="BNI">Banco de Negócios Internacionais(BNI)</option>
+                <option value="BDA">Banco de Desenvolvimento Angolano(BDA)</option>
+                <option value="BCI">Banco de Comércio e Indústria(BCI)</option>
+                <option value="BIC">Banco de Internacional de Comercio(BIC)</option>
+                <option value="BFA">Banco de Fomento Angola(BFA)</option>
+                <option value="SOL">Banco Sol(SOL)</option>
+                <option value="FB">FiniBanco(FB)</option>
+            </select>
+            <section>
+                <input type="number" id="valor1" placeholder="00.00">
+                <select id="conversor-select-moeda"></select>
+            </section>
+            <button id="btn_conversor">Converter</button>
+        </section>
+
+        <section class="resultado">
+            <button id="copy"><i class="fas fa-copy"></i></button>
+            <button value = "00.00" >00.00</button>
+        </section>
+
+        <aside class="await">
+            <img src="admin/midias/imgs/load.gif" width="120px">
+            <h3>Carregando...</h3>
+        </aside>
+    </main>
+
+    <!-- mini-app `Notícias` -->
+    <main id="noticias">
+        <section id="header">
+            <label for="noticia-option">Selecione o Tema: </label>
+            <select id="noticia-option"></select>
+        </section>
+        <section class="master">
+            <article class="content">
+                <div id="titulo-noticia">
+                    <h2></h2>
+                </div>
+                <div id="imagem-noticia"></div>
+                <div id="cabecario-noticia">
+                    <h4></h4>
+                </div>
+                <div id="corpo-noticia"></div>
+            </article>
+        </section>
+    </main>
+
+    <!-- mini-app `Consultas` -->
+    <main id="consultas">
+        <button class="btn-cslt-apps" id="btn-cslt-impostos">
+            <div class="btn-cslt-box"><i class="fas fa-compass"></i></div>
+            <p class="btn-cslt-text">Consultas de Impostos</p>
+        </button>
+        <button class="btn-cslt-apps" id="btn-cslt-nif">
+            <div class="btn-cslt-box"><i class="fas fa-compass"></i></div>
+            <p class="btn-cslt-text">Consultas de NIF's</p>
+        </button>
+        <button class="btn-cslt-apps" id="btn-cslt-precos">
+            <div class="btn-cslt-box"><i class="fas fa-compass"></i></div>
+            <p class="btn-cslt-text">Consultas de Preçários</p>
+        </button>
+    </main>
+
+    <!-- mini-app `Consultas-Impostos` -->
+    <main id="impostos">
+        <section class="header">
+            <button id="impostos-exit"><i class="fas fa-arrow-left"></i> <span>Consultas de Impostos</span></button>
+            <button><i class="fas fa-plus"></i></button>
+        </section>
+        <section class="header-select">
+            <label for="impostos-select">Tipo de Impostos: </label>
+            <select id="impostos-select">
+                <option value="IR">Impostos de Renda</option>
+                <option value="II">Impostos Industrial</option>
+                <option value="IRT">Imposto sobre o Rendimento de Trabalho</option>
+                <option value="IS">Imposto de Selo</option>
+                <option value="IPU">Imposto Predial Urbano</option>
+            </select>
+        </section>
+        <section class="master">
+            <div class="content">
+                <div class="imposto-box">
+                <section class="titulo"><div class="box-style"></div><h3>Imposto Electricidade ENDE</h3></section>
+                <section class="description">
+                    <article>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                        </p>
+                    </article>
+                </section>
+                <section class="bottom-section"><span>data: 30-12-2022 13:01</span></section>
+            </div>
+            <div class="imposto-box">
+                <section class="titulo"><div class="box-style"></div><h3>Imposto Electricidade ENDE</h3></section>
+                <section class="description">
+                    <article>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                        </p>
+                    </article>
+                </section>
+                <section class="bottom-section"><span>data: 30-12-2022 13:01</span></section>
+            </div>
+            <div class="imposto-box">
+                <section class="titulo"><div class="box-style"></div><h3>Imposto Electricidade ENDE</h3></section>
+                <section class="description">
+                    <article>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                        </p>
+                    </article>
+                </section>
+                <section class="bottom-section"><span>data: 30-12-2022 13:01</span></section>
+            </div>
+            <div class="imposto-box">
+                <section class="titulo"><div class="box-style"></div><h3>Imposto Electricidade ENDE</h3></section>
+                <section class="description">
+                    <article>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                        </p>
+                    </article>
+                </section>
+                <section class="bottom-section"><span>data: 30-12-2022 13:01</span></section>
+            </div>
+            <div class="imposto-box">
+                <section class="titulo"><div class="box-style"></div><h3>Imposto Electricidade ENDE</h3></section>
+                <section class="description">
+                    <article>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Delectus impedit, beatae, sit eligendi sunt facere odio corrupti, 
+                            reprehenderit fugiat accusantium veniam sint tenetur error? 
+                            Aperiam debitis quam totam corporis fugit?
+                        </p>
+                    </article>
+                </section>
+                <section class="bottom-section"><span>data: 30-12-2022 13:01</span></section>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- mini-app `Consultas-NIF` -->
+    <main id="NIF">
+        <section class="header">
+            <button id="NIF-exit"><i class="fas fa-arrow-left"></i> <span>Consultas de NIF</span></button>
+            <button><i class="fas fa-plus"></i></button>
+        </section>
+        <label for="nif-input" class="label"><h2>Insira o NIF: </h2></label>
+        <section class="search-nif">
+            <input type="text" id="nif-input">
+            <button>Pesquisar</button>
+        </section>
+        <section class="resultado-nif">
+            <h3>Nenhum Resultado Ainda</h3>
+        </section>
+        <section class="msg-nif">
+            <span>
+                Se um NIF não estiver registrado significa que é falso!
+                E que o proprietário do mesmo não é um comerciante legal.
+            </span>
+        </section>
+    </main>
+
+    <!-- mini-app `More Apps` -->
+    <main id="more_apps"></main>
+
+    <script src="admin/scripts2/variaveis.js"></script>
+    <script src="admin/scripts2/functions.js"></script>
+    <script src="admin/scripts2/__init__.js"></script>
+    <script src="admin/scripts2/conversor.js"></script>
+    <script src="admin/scripts2/cambio.js"></script>
+    <script src="admin/scripts2/noticias.js"></script>
+    <script src="admin/scripts2/consultas.js"></script>
+    <script src="admin/scripts2/NIF.js"></script>
+    <script src="admin/scripts2/requisicoes.js"></script>
+</body>
+</html>

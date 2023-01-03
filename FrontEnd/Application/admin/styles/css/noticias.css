@@ -1,0 +1,103 @@
+@import url(default.css);
+
+#noticias{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 1;
+    transition: right .2s ease ,all .7s ease-in-out;
+}
+
+#noticias.active{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+#noticias .noticias-item{
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--default-h);
+    color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticias .noticias-item select{
+    width: 100%;
+    border: 1px solid var(--back);
+    cursor: pointer;
+    text-align: center;
+}
+
+#noticias .content{
+    position: absolute;
+    bottom: 3rem;
+    width: 95%;
+    height: 75vh;
+    font-weight: 300;
+    background-color: transparent;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticias .content #artigo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#noticias .content #artigo h2{
+    text-align: center;
+    font-weight: inherit;
+}
+
+#noticias .content #artigo #noticia-imagem{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#noticias .content #artigo #noticia-cabecario{
+    width: 100%;
+    text-align: justify-all;
+    font-weight: 400;
+}
+
+#noticias .content #artigo #noticia-corpo{
+    padding: 0 7px;
+    text-align: justify;
+}
+
+#noticias .content #artigo span a{
+    color: var(--default-h);
+}

@@ -1,0 +1,147 @@
+@import url(default.css);
+
+#cambio{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 3;
+    transition: right .2s ease ,all .7s ease-in-out;
+}
+
+#cambio.active{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+#cambio .main{
+    position: relative;
+    top: 3.5rem;
+    width: 100%;
+    height: 100vh;
+    color: var(--text);
+}
+
+#cambio .main .header{
+    width: 100%;
+    height: 8vh;
+    padding: 5px;
+    background-color: var(--default-h);
+    color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: center;
+    gap: 3px;
+}
+
+#cambio .main .header p{
+    text-transform: capitalize;
+}
+
+#cambio .main .header select{
+    width: 100%;
+    height: 25px;
+    background-color: var(--default-h);
+    color: var(--back);
+    border: 1px solid var(--back);
+    cursor: pointer;
+}
+
+#cambio .main .body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#cambio .main .body .info{
+    position: relative;
+    height: 4rem;
+    top: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#cambio .main .body .cambios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cambio .main .body .cambios .cabecario, #cambio .main .body .cambios ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#cambio .main .body .cambios .cabecario div{
+    width: 33%;
+    height: 25px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 25px;
+    border-right: 1px solid var(--back);
+}
+
+#cambio .main .body .cambios .cabecario div:nth-of-type(3){border-left: 0;}
+
+.ul_master{
+    position: relative;
+    height: 58.5vh;
+    top: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    overflow-y: scroll;
+}
+
+.ul_master div{
+    position: absolute;
+    top: 0.7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.ul_master::-webkit-scrollbar-track{
+    width: 5px;
+    background-color: #ddd;
+}
+
+.ul_master::-webkit-scrollbar-thumb{
+    width: 3px;
+    border-radius: 4px;
+    background-color: var(--default);
+}
+
+#cambio .main .body .cambios ul ul li{
+    width: 33%;
+    height: 25px;
+    background-color: var(--default-h);
+    color: var(--back);
+    text-align: center;
+    line-height: 25px;
+    border-right: 1px solid var(--back);
+}

@@ -1,0 +1,100 @@
+@import url(default.css);
+
+#NIF{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    z-index: 4;
+    transition: right .2s ease ,all .7s ease-in-out;
+}
+
+#NIF.active{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+#NIF .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--default);
+    color: var(--back);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 2;
+}
+
+#NIF .header button{
+    font-size: 16px;
+}
+
+#NIF .header span{
+    margin: 0 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search-nif{
+    width: 80%;
+    height: 40px;
+    display: flex;
+}
+
+.search-nif input{
+    width: 70%;
+    height: inherit;
+    border: 1px solid var(--default);
+    text-indent: 10px;
+}
+
+.search-nif button{
+    width: 30%;
+    height: inherit;
+    background-color: var(--default);
+    border: 1px solid var(--default);
+    color: var(--back);
+}
+
+.label{
+    width: 80%;
+}
+
+.label h2{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.resultado-nif{
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.resultado-nif h3{
+    color: var(--default);
+    font-weight: 300;
+}
+
+.msg-nif{
+    width: 80%;
+}
