@@ -17,7 +17,7 @@ Com este aplicativo as pessoas terão em um só sítio as informações sobre:
 
 ## Algumas Screens da Aplicação:
 
-<img src="assets\capture-20221225-202709.png" style="zoom:85%;" /> <img src="assets\capture-20221225-202643.png" style="zoom:85%;" /> <img src="assets\capture-20221225-202437.png" style="zoom:85%;" /> <img src="assets\capture-20221225-202536.png" style="zoom:85%;" />
+<img src="assets\Screens\download (1).png" style="zoom:85%;" /> <img src="assets\Screens\download (2).png" style="zoom:85%;" /> <img src="assets\Screens\download (3).png" style="zoom:85%;" /> <img src="assets\Screens\download (4).png" style="zoom:85%;" /> <img src="assets\Screens\download (5).png" style="zoom:85%;" /> <img src="assets\Screens\download (6).png" style="zoom:85%;" />
 
 ## Detalhes da Aplicação
 
